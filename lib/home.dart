@@ -60,9 +60,8 @@ class _HomeScreenState extends State<HomeScreen> {
             final collections = snapshot.data!.joinedCollections;
             return Expanded(
               child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
                   itemExtent: 300,
-                  shrinkWrap: true,
+                  scrollDirection: Axis.horizontal,
                   itemCount: collections.length,
                   itemBuilder: (ctx, i) => CollectionDisplay(collections[i])),
             );
